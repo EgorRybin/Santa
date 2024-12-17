@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-image: url(./img/background-6816967_1280.jpg);
-  background-size: cover;
+  background-size: 1200px 1200px;
   background-repeat: no-repeat;
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
@@ -47,10 +47,10 @@ ul {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100%;
   background-color: rgb(198, 51, 51);
   color: rgb(255, 255, 255);
   font-size: 50px;
@@ -71,6 +71,7 @@ ul {
 }
 
 .modalText {
+  padding: 24px;
 }
 .modalFinish.is-active {
   display: none;
@@ -81,9 +82,9 @@ ul {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  width: 100vw;
-  height: 100vw;
-  /* background-color: rgb(198, 51, 51); */
+  width: 100%;
+  height: 100%;
+
   background-position: 4% -2%;
   background-image: url(./img/santa.jpg);
 
