@@ -6,6 +6,7 @@ body {
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
+  letter-spacing: 0.5px;
 }
 
 li {
@@ -51,15 +52,87 @@ ul {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: rgb(198, 51, 51);
   color: rgb(255, 255, 255);
   font-size: 50px;
+  background-image: url("./img/modal_bg.jpg");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.modal1 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  background-image: url("./img/modal_bg1.jpg");
+  background-size: 1200px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-.modal.is-active {
+.modal2 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  background-image: url("./img/modal_bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.modal3 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  background-image: url("./img/modal_bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal4 {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  background-image: url("./img/modal_bg4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.modal.is-active,
+.modal1.is-active,
+.modal2.is-active,
+.modal3.is-active,
+.modal4.is-active {
   display: none;
 }
-.modalBtn {
+.modalBtn,
+.modalBtn1,
+.modalBtn2,
+.modalBtn3,
+.modalBtn4 {
   border: 0;
   border-radius: 5px;
   padding: 8px;
