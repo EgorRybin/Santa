@@ -191,6 +191,7 @@ function handleSubmit6(event) {
 form6.addEventListener("submit", handleSubmit6);
 
 // ============================================//
+
 const localKey = localStorage.getItem("key");
 console.log(localKey);
 
@@ -218,4 +219,3 @@ if (localKey === key6) {
   aciveElement.classList.remove("active");
   modalFinish.classList.remove("is-active");
 }
-// =============================================//
