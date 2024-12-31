@@ -16,6 +16,13 @@ const modalBtn3 = document.querySelector(".modalBtn3");
 const modalBtn4 = document.querySelector(".modalBtn4");
 const modalFinish = document.querySelector(".modalFinish");
 
+const item1 = document.querySelector(".one");
+const item2 = document.querySelector(".two");
+const item3 = document.querySelector(".three");
+const item4 = document.querySelector(".four");
+const item5 = document.querySelector(".five");
+const item6 = document.querySelector(".six");
+
 let aciveElement = document.querySelector(".active");
 let nextElement = aciveElement.nextElementSibling;
 
@@ -35,6 +42,7 @@ function handleSubmit1(event) {
 
   if (answer === key1) {
     modal.classList.remove("is-active");
+    localStorage.setItem("key", key1);
   } else {
     console.log("wrong answer");
   }
@@ -63,6 +71,7 @@ function handleSubmit2(event) {
   nextElement = aciveElement.nextElementSibling;
   if (answer === key2) {
     modal1.classList.remove("is-active");
+    localStorage.setItem("key", key2);
   } else {
     console.log("wrong answer");
   }
@@ -90,6 +99,7 @@ function handleSubmit3(event) {
   nextElement = aciveElement.nextElementSibling;
   if (answer === key3) {
     modal2.classList.remove("is-active");
+    localStorage.setItem("key", key3);
   } else {
     console.log("wrong answer");
   }
@@ -117,6 +127,7 @@ function handleSubmit4(event) {
   nextElement = aciveElement.nextElementSibling;
   if (answer === key4) {
     modal3.classList.remove("is-active");
+    localStorage.setItem("key", key4);
   } else {
     console.log("wrong answer");
   }
@@ -144,6 +155,7 @@ function handleSubmit5(event) {
   nextElement = aciveElement.nextElementSibling;
   if (answer === key5) {
     modal4.classList.remove("is-active");
+    localStorage.setItem("key", key5);
   } else {
     console.log("wrong answer");
   }
@@ -170,9 +182,40 @@ function handleSubmit6(event) {
   nextElement = aciveElement.nextElementSibling;
   if (answer === key6) {
     modalFinish.classList.remove("is-active");
+    localStorage.setItem("key", key6);
   } else {
     console.log("wrong answer");
   }
   form.reset();
 }
 form6.addEventListener("submit", handleSubmit6);
+
+// ============================================//
+const localKey = localStorage.getItem("key");
+console.log(localKey);
+
+if (localKey === key1) {
+  aciveElement.classList.remove("active");
+  item2.classList.add("active");
+}
+if (localKey === key2) {
+  aciveElement.classList.remove("active");
+  item3.classList.add("active");
+}
+if (localKey === key3) {
+  aciveElement.classList.remove("active");
+  item4.classList.add("active");
+}
+if (localKey === key4) {
+  aciveElement.classList.remove("active");
+  item5.classList.add("active");
+}
+if (localKey === key5) {
+  aciveElement.classList.remove("active");
+  item6.classList.add("active");
+}
+if (localKey === key6) {
+  aciveElement.classList.remove("active");
+  modalFinish.classList.remove("is-active");
+}
+// =============================================//
