@@ -19,12 +19,12 @@ const modalFinish = document.querySelector(".modalFinish");
 let aciveElement = document.querySelector(".active");
 let nextElement = aciveElement.nextElementSibling;
 
-const key1 = "a";
-const key2 = "a";
-const key3 = "a";
-const key4 = "a";
-const key5 = "a";
-const key6 = "a";
+const key1 = "santa";
+const key2 = "christmas";
+const key3 = "grinch";
+const key4 = "elf";
+const key5 = "winter";
+const key6 = "snow";
 
 form1.addEventListener("submit", handleSubmit1);
 

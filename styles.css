@@ -18,6 +18,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 
 .container {
   display: flex;
@@ -25,6 +28,12 @@ ul {
   justify-content: center;
   padding-top: 32px;
   height: 100vw;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .itemConteiner {
   display: flex;
@@ -42,6 +51,8 @@ ul {
   padding: 24px 32px;
   color: rgb(255, 255, 255);
   font-size: 24px;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
 .modal {
@@ -70,6 +81,7 @@ ul {
   height: 100%;
   color: rgb(255, 255, 255);
   font-size: 50px;
+  background-color: #6d0101;
   background-image: url("./img/modal_bg1.jpg");
   background-size: 1200px;
   background-repeat: no-repeat;
@@ -86,6 +98,7 @@ ul {
   height: 100%;
   color: rgb(255, 255, 255);
   font-size: 50px;
+  background-color: #6d0101;
   background-image: url("./img/modal_bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,6 +115,7 @@ ul {
   height: 100%;
   color: rgb(255, 255, 255);
   font-size: 50px;
+  background-color: #6d0101;
   background-image: url("./img/modal_bg3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,6 +131,7 @@ ul {
   height: 100%;
   color: rgb(255, 255, 255);
   font-size: 50px;
+  background-color: #6d0101;
   background-image: url("./img/modal_bg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,6 +161,7 @@ ul {
 
 .modalText {
   padding: 24px;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 .modalFinish.is-active {
   display: none;
@@ -190,6 +206,7 @@ ul {
 }
 
 .input {
+  text-align: center;
   margin: 16px 0;
   border: 0;
   border-radius: 5px;
@@ -203,6 +220,21 @@ ul {
   border: 0;
   border-radius: 5px;
   padding: 8px;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  border: 0;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Amatic SC", sans-serif;
   font-weight: 700;
   font-style: normal;
